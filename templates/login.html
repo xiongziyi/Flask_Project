@@ -1,0 +1,19 @@
+<html>
+   <body>
+   {{ data }}
+   {% for i in data %}
+        <li>{{ i }}</li>
+   {%  endfor %}
+   <h1>{{ username }}</h1>
+   <h1>{{ age }}</h1>
+   {% for key ,value in context.items() %}
+   <tr><td>{{ key }}</td><td>{{ value }}</td></tr><br>
+   {% endfor %}
+      <form action = "http://localhost:5000/login" method = "get">
+         <p>Enter Name:</p>
+         <p><input type = "text" name = "nm" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+
+   </body>
+</html>
